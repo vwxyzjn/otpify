@@ -1,0 +1,6 @@
+create_table("users", func(t) {
+	t.Column("id", "uuid", {"primary": true})
+	t.Column("user_name", "text", {})
+	t.Column("email", "text", {})
+	t.Column("password_hash", "text", {})
+})
